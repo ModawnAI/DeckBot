@@ -1,0 +1,150 @@
+That's an excellent point about maintaining both **local (slide-level)** and **global (deck-level)** context. A successful RAG system needs both for high recall and precision.
+
+You should structure your data using a **Multi-Level Chunking and Metadata Strategy**. This involves creating two main types of documents/chunks in your VectorDB, where one (the slide) is highly detailed for specific answers, and the other (the deck) provides high-level context.
+
+## 🧱 Enhanced Structured Metadata Generation
+
+To balance the slide content and the entire deck, you'll need to define and store metadata at **two distinct levels**: the **Slide Level** (for high precision) and the **Deck Level** (for high recall and context).
+
+---
+
+### 1. 🖼️ Slide-Level Metadata (Primary RAG Target)
+
+This is the metadata and content stored for **each individual page/slide**.
+
+| Metadata Field | Content/Source | Purpose |
+| :--- | :--- | :--- |
+| **`filename`** | Original PDF filename (e.g., "Deck\_A.pdf") | **Filtering** and source citation. |
+| **`slide_number`** | The page index (e.g., 5) | **Context** for the LLM ("This is slide 5 of the deck"). |
+| **`slide_content`** | **The entire raw text of the slide.** | The full **context** chunk passed to the LLM for generation. |
+| **`slide_summary`** | LLM-generated **1-2 sentence summary** of just the slide. | **Embedding** content: helps capture the slide's core topic for semantic search. |
+| **`keywords`** | LLM-generated core terms for the slide (e.g., `["customer", "marketing", "funnel"]`). | **Filtering** and boosting search relevance. |
+| **`slide_layout`** | LLM-tagged slide type (e.g., "Traction", "Team", "Financials"). | **Filtering** by deck structure. |
+
+### 2. 📝 Deck-Level Metadata (Global Context/Filtering)
+
+This metadata applies to **all slides** from a single pitch deck, providing essential context about the company.
+
+| Metadata Field | Content/Source | Purpose |
+| :--- | :--- | :--- |
+| **`deck_industry`** | LLM-classified or manual tag (e.g., "Fintech", "E-commerce"). | **Critical for Filtering** ("Show social media examples only in **Fintech** decks"). |
+| **`company_name`** | Extracted from the title slide or LLM-generated. | **Filtering** and citation. |
+| **`executive_summary`** | LLM-generated summary of the **entire deck's purpose** (1-2 paragraphs, derived from the first few slides). | **Contextual awareness** for the LLM during final generation. |
+| **`total_pages`** | Total number of slides in the PDF. | **Context** for the LLM ("This is a very detailed 120-page deck"). |
+
+---
+
+## 💾 Storage and Retrieval Strategy
+
+### Storage
+
+You will store **only the slide-level content** as the primary retrievable chunks, but you will associate *all* of the metadata with each chunk.
+
+* When you insert Slide 5 of "Deck\_A.pdf" into the VectorDB, the associated metadata will include both its `slide_summary` and the `deck_industry` ("Fintech") and `executive_summary` of the entire deck.
+
+### Retrieval
+
+You will use this structured data in two ways for a highly effective RAG system:
+
+1.  **Semantic Search (The Core):** Embed the user query and search for the closest matching **Slide-Level Vectors** (which were created using the `slide_content` + `slide_summary`).
+2.  **Metadata Filtering:** Before selecting the final N slides, you can filter the search results using any of the **Deck-Level Metadata** (e.g., only keep results where `deck_industry` is "E-commerce").
+3.  **Context Assembly (The Balance):** When you send the final context to the LLM, you should include the full text of the retrieved slides AND the high-level **Deck-Level Metadata** (specifically the `executive_summary` and `deck_industry`) for each unique deck referenced.
+
+> **Example Context to LLM:**
+>
+> **Global Context (Deck\_A - Fintech):** *This pitch deck is for a neobank focused on fractional real estate investment, seeking \$5M in seed funding.*
+>
+> **Retrieved Slide:** (Slide 12/80, Title: Social Media Funnel) *[Full Text of Slide 12 goes here...]*
+>
+> This approach gives the LLM the necessary **local detail** from the slide and the essential **global business context** from the deck summary to answer accurately.
+
+------
+
+based on the datastructure above, create a script that looks at a folder, looks at the PDF, first summarizes the entire PDF, then converts the PDF into single images, and then makes an inference to extract data. What I want is a json file for each pdf with the data structure above. Make sure deck industry are ENUMS. use gemini 2.5 pro and other SDK. // To run this code you need to install the following dependencies:
+
+// npm install @google/genai mime
+
+// npm install -D @types/node
+
+
+
+import {
+
+  GoogleGenAI,
+
+} from '@google/genai';
+
+
+
+async function main() {
+
+  const ai = new GoogleGenAI({
+
+    apiKey: process.env.GEMINI_API_KEY,
+
+  });
+
+  const config = {
+
+    thinkingConfig: {
+
+      thinkingBudget: -1,
+
+    },
+
+    imageConfig: {
+
+      imageSize: '1K',
+
+    },
+
+  };
+
+  const model = 'gemini-2.5-pro';
+
+  const contents = [
+
+    {
+
+      role: 'user',
+
+      parts: [
+
+        {
+
+          text: `INSERT_INPUT_HERE`,
+
+        },
+
+      ],
+
+    },
+
+  ];
+
+
+
+  const response = await ai.models.generateContentStream({
+
+    model,
+
+    config,
+
+    contents,
+
+  });
+
+  let fileIndex = 0;
+
+  for await (const chunk of response) {
+
+    console.log(chunk.text);
+
+  }
+
+}
+
+
+
+main();
+

@@ -1,0 +1,24 @@
+{
+  "companies": [
+    "Example Company A",
+    "Example Company B"
+  ],
+  "industries": [
+    "Technology",
+    "Healthcare",
+    "Finance"
+  ],
+  "keywords": [
+    "마케팅 전략",
+    "브랜드 캠페인",
+    "SNS 운영",
+    "유튜브 전략",
+    "인스타그램 마케팅",
+    "통합 채널 전략",
+    "디지털 마케팅",
+    "콘텐츠 전략"
+  ],
+  "total_companies": 2,
+  "total_industries": 3,
+  "total_unique_keywords": 8
+}

@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# PDFs (too large for git)
+pdf/*.pdf
+
+# Output files (too large, except metadata)
+output/*_metadata.json
+output/prepared_batches/
+output/pinecone_upload_ready/
+
+# Keep ingested directory structure
+output/ingested/*
+!output/ingested/.gitkeep
+
+# Images (stored in Vercel Blob)
+images/
+!images/.gitkeep
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Keep metadata.json in root
+!deckbot-metadata.json

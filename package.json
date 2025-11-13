@@ -1,0 +1,53 @@
+{
+  "name": "deckbot",
+  "version": "1.0.0",
+  "description": "PDF pitch deck metadata extraction system with multi-level chunking for RAG",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "process": "tsx src/index.ts",
+    "process:single": "tsx src/process-single.ts",
+    "process:all": "./scripts/process-all-pdfs.sh",
+    "process-ingest": "tsx src/process-and-ingest.ts",
+    "process:optimized": "./scripts/process-and-optimize.sh",
+    "optimize:images": "./scripts/optimize-images.sh",
+    "ingest": "tsx scripts/pinecone-ingestion.ts ingest output",
+    "ingest:archive": "./scripts/ingest-and-archive.sh",
+    "stats": "tsx scripts/pinecone-ingestion.ts stats",
+    "query": "tsx scripts/pinecone-ingestion.ts query",
+    "search": "tsx scripts/pinecone-ingestion.ts search",
+    "cascade": "tsx scripts/pinecone-ingestion.ts cascade",
+    "extract-metadata": "tsx scripts/extract-metadata.ts",
+    "metadata": "tsx scripts/get-metadata.ts",
+    "export": "tsx scripts/export-metadata.ts",
+    "rag": "tsx src/rag-query.ts"
+  },
+  "keywords": [
+    "pdf",
+    "rag",
+    "gemini",
+    "metadata",
+    "pitch-deck"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^1.28.0",
+    "@pinecone-database/pinecone": "^4.0.0",
+    "@vercel/blob": "^2.0.0",
+    "dotenv": "^16.4.7",
+    "mime": "^4.0.4",
+    "openai": "^4.77.3",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/mime": "^3.0.4",
+    "@types/node": "^22.9.0",
+    "@types/pdf-parse": "^1.1.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

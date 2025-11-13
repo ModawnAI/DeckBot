@@ -1,0 +1,153 @@
+
+================================================================================
+🔍 DeckBot RAG Query
+================================================================================
+
+📝 Question: "카카오톡 마케팅  관련 소개서 다 알려줘"
+
+
+🔢 Generating query embedding...
+
+🎯 Target Keywords for scoring: 디지털 마케팅, SNS 마케팅 전략, 소셜 마케팅, 커뮤니티 마케팅, 마케팅 제안서...
+   Target Industry: null
+   Target Company: null
+
+🔎 Searching Pinecone (enriched-slides namespace)...
+   Found: 20 results, top score: 57.2%
+
+📊 Re-scoring results by keyword relevance...
+
+✅ Found 10 results (boosted by keyword matching)
+   1. CREVERSE (68.6% | 1 kw matches (orig: 53.6%))
+      Matched: 채널 운영 전략
+   2. TILTPRO (68.2% | 1 kw matches (orig: 53.2%))
+      Matched: 디지털 마케팅
+   3. 대교 (57.2% (orig: 57.2%))
+   4. 포스코퓨처엠 (56.4% (orig: 56.4%))
+   5. 대교 (55.5% (orig: 55.5%))
+   6. Double A (55.0% (orig: 55.0%))
+   7. COWAY (54.6% (orig: 54.6%))
+   8. COWAY (54.2% (orig: 54.2%))
+   9. 포스코퓨처엠 (54.2% (orig: 54.2%))
+   10. 대교 (54.2% (orig: 54.2%))
+
+💬 Generating answer...
+
+================================================================================
+📊 ANSWER:
+================================================================================
+네, 문의하신 '카카오톡 마케팅'과 연관된 디지털 채널 운영 전략 및 소셜 미디어 마케팅 제안서 핵심 슬라이드를 분석해 드립니다.
+
+직접적으로 '카카오톡' 채널만 다룬 자료는 없지만, 소셜 미디어 채널 운영 전략, 커뮤니티 활성화, 마케팅 사례에 대한 매우 유용한 자료들이 있습니다. 이 전략들은 카카오톡 채널 운영에도 충분히 응용 가능합니다.
+
+---
+
+### 가장 연관성 높은 결과 (Top 3)
+
+아래 세 가지 자료가 **채널 운영 전략, 마케팅 사례, 커뮤니티 활성화** 측면에서 가장 직접적인 도움을 드릴 수 있습니다.
+
+**1. 채널 커뮤니티 운영 및 활성화 노하우 (포스코퓨처엠)**
+*   **핵심 내용:** 유튜브 구독자 증대를 위해 영상 콘텐츠뿐만 아니라, **커뮤니티 이벤트 및 게시물을 활용하는 구체적인 전략과 노하우**를 소개합니다. '커뮤니티 활성화 전략'에 대한 가장 직접적이고 실용적인 아이디어를 얻을 수 있는 슬라이드입니다.
+*   **출처:** `(Social Lab) 24년도 포스코퓨처엠 소셜미디어 운영제안_240109.pdf (Slide #170)`
+
+**2. 통합 채널 전략을 통한 브랜드 팬덤 구축 (대교)**
+*   **핵심 내용:** 여러 채널을 파편적으로 운영하는 것의 비효율성을 지적하며, **소셜 미디어의 핵심 기능(구독, 공유 등)을 활용해 브랜드 팬(FAN)을 모으고 이들이 자발적으로 메시지를 확산시키는 선순환 구조**를 제안합니다. 채널 운영의 근본적인 방향성과 장기적인 목표 설정에 참고하기 좋습니다.
+*   **출처:** `(일그램) 대교 공식 SNS 채널 운영 전략_240312_v3.pdf (Slide #8, #7)`
+
+**3. 디지털 바이럴 마케팅 실행 과제 (COWAY)**
+*   **핵심 내용:** 네이버/인스타그램 체험단, 유튜브 브랜디드 콘텐츠, 시즌 캠페인 등 **실제 실행 가능한 디지털 마케팅 핵심 과제들을 요약**하여 보여줍니다. '소셜 미디어 마케팅 사례'로 참고하여 구체적인 액션 아이디어를 얻기에 유용합니다.
+*   **출처:** `(ilgram) 코웨이 디지털 바이럴 전략 제안서.pdf (Slide #57, #63)`
+
+---
+
+### 기타 참고할 만한 슬라이드
+
+*   **채널별 역할 정의 및 배포 전략 (Double A):** 인스타그램, 유튜브, 페이스북 등 각 채널의 우선순위를 정하고 타겟에 맞춰 콘텐츠를 어떻게 배포할지에 대한 전략을 제시합니다.
+    *   **출처:** `[ilgram] Double A 2024 SNS Operation Proposal.pdf (Slide #57)`
+*   **미디어 특성 분석 기반 전략 수립 (CREVERSE):** 기존 미디어와 SNS의 근본적인 차이점을 분석하여, 콘텐츠 축적형 미디어로서 SNS 채널을 어떻게 전략적으로 운영해야 하는지에 대한 필요성을 제시합니다.
+    *   **출처:** `(Social Lab) 크레버스 SNS 운영 제안_230908.pdf (Slide #4)`
+*   **타겟 고객의 채널 이용 행태 분석 (TILTPRO):** 본격적인 전략 제시에 앞서, 핵심 타겟이 어떤 디지털 채널을 주로 이용하는지에 대한 근본적인 질문을 던지며 전략의 설득력을 높입니다.
+    *   **출처:** `[ilgram] 2025년 틸트프로 운영 대행 제안서.pdf (Slide #25)`
+================================================================================
+
+📄 Detailed Results:
+
+1. CREVERSE - 교육
+   File: (Social Lab) 크레버스 SNS 운영 제안_230908.pdf
+   Score: 68.6%
+   Slide: #4
+   Summary: 기존 미디어와 SNS 미디어의 근본적인 특성을 대비 분석하며, 메시지 중심의 휘발성 미디어와 채널 운영 기반의 콘텐츠 축적형 SNS를 구분하여 전략적 접근의 필요성을 제시한다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/social-lab-sns-230908.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/social-lab-sns-230908/slide-004.png
+
+2. TILTPRO - 제조
+   File: [ilgram] 2025년 틸트프로 운영 대행 제안서.pdf
+   Score: 68.2%
+   Slide: #25
+   Summary: 본 슬라이드는 본격적인 채널 전략 및 미디어 플랜을 제시하기에 앞서, TILTPRO의 핵심 타깃인 굴착기 기사들이 주로 이용하는 디지털 채널에 대한 근본적인 질문을 던지며 청중의 인식을 전환시키고 다음 섹션으로 유도한다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-2025.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-2025/slide-025.png
+
+3. 대교 - 교육
+   File: (일그램) 대교 공식 SNS 채널 운영 전략_240312_v3.pdf
+   Score: 57.2%
+   Slide: #8
+   Summary: 이 슬라이드는 파편화된 채널 운영이 비효율적이고 예산 소모적임을 지적하며, 통합 채널 전략의 당위성을 제시한다. 핵심은 소셜 미디어의 기능을 활용해 브랜드 팬(FAN)을 응집시키고, 이들이 자발적으로 메시지를 확산하는 선순환 구조를 구축하는 것이다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/sns-240312-v3.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/sns-240312-v3/slide-008.png
+
+4. 포스코퓨처엠 - 자동차-전기차
+   File: (Social Lab) 24년도 포스코퓨처엠 소셜미디어 운영제안_240109.pdf
+   Score: 56.4%
+   Slide: #170
+   Summary: 유튜브 알고리즘 세팅을 지원하고 구독자를 확보하기 위해 영상 콘텐츠 외 커뮤니티 이벤트 및 게시물을 활용하는 채널 커뮤니티 운영 전략과 노하우를 소개한다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/social-lab-24-240109.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/social-lab-24-240109/slide-170.png
+
+5. 대교 - 교육
+   File: (일그램) 대교 공식 SNS 채널 운영 전략_240312_v3.pdf
+   Score: 55.5%
+   Slide: #7
+   Summary: 파편화된 채널 운영의 비효율성을 강조한 후, 소셜 미디어의 핵심 특징인 구독/팔로우, 공유/링크, 아카이빙 기능을 활용하여 브랜드 팬덤을 응집시키고 장기적인 바이럴 발신력을 확보해야 함을 논리적으로 제시합니다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/sns-240312-v3.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/sns-240312-v3/slide-007.png
+
+6. Double A - 소비재
+   File: [ilgram] Double A 2024 SNS Operation Proposal.pdf
+   Score: 55.0%
+   Slide: #57
+   Summary: 일상 속 공감과 해결책 제공을 목표로 하는 데일리 콘텐츠의 채널별 배포 전략을 제시하며, 인스타그램을 2030 핵심 타겟과의 정서적 유대를 위한 메인 채널로 설정하고, 유튜브 및 페이스북을 활용한 광범위한 도달(Coverage Expansion)을 도모한다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-double-a-2024-sns-operation-proposal.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-double-a-2024-sns-operation-proposal/slide-057.png
+
+7. COWAY - 소비재
+   File: (ilgram) 코웨이 디지털 바이럴 전략 제안서.pdf
+   Score: 54.6%
+   Slide: #57
+   Summary: 이 슬라이드는 코웨이의 2024년 디지털 바이럴 전략을 구성하는 세 가지 핵심 제안 과제, 즉 네이버/인스타그램 체험단, 유튜브 브랜디드 콘텐츠 이슈메이킹, 그리고 제습기 시즌 디지털 캠페인 아이디어를 요약하여 제시합니다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram/slide-057.png
+
+8. COWAY - 소비재
+   File: (ilgram) 코웨이 디지털 바이럴 전략 제안서.pdf
+   Score: 54.2%
+   Slide: #63
+   Summary: 이 슬라이드는 코웨이의 2024년 디지털 바이럴 전략 중 첫 번째 핵심 과제인 'Strategy 01'의 시작을 알리는 섹션 구분 슬라이드이며, 네이버, 인스타그램, 유튜브 등 주요 소셜 채널들의 마케팅 역할 분담과 시너지 창출 전략을 제시하고 있습니다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram/slide-063.png
+
+9. 포스코퓨처엠 - 자동차-전기차
+   File: (Social Lab) 24년도 포스코퓨처엠 소셜미디어 운영제안_240109.pdf
+   Score: 54.2%
+   Slide: #158
+   Summary: 이 슬라이드는 포스코퓨처엠의 소셜 미디어 제안서에서 채널 운영의 기술적인 측면과 검색 엔진 최적화(SEO) 전략을 다루는 네 번째 주요 섹션을 소개하는 도입부입니다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/social-lab-24-240109.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/social-lab-24-240109/slide-158.png
+
+10. 대교 - 교육
+   File: (일그램) 대교 공식 SNS 채널 운영 전략_240312_v3.pdf
+   Score: 54.2%
+   Slide: #21
+   Summary: 이 슬라이드는 기존 대교 SNS 운영의 한계점과 아쉬웠던 부분을 제시하고, 새로운 통합 기업 채널 강화 전략을 제안하기 위한 도입부 역할을 한다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/sns-240312-v3.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/sns-240312-v3/slide-021.png

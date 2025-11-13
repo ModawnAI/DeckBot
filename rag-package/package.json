@@ -1,0 +1,31 @@
+{
+  "name": "deckbot-rag",
+  "version": "1.0.0",
+  "description": "Gemini-powered RAG query system for presentation decks",
+  "type": "module",
+  "main": "dist/rag-query.js",
+  "scripts": {
+    "build": "tsc",
+    "rag": "tsx src/rag-query.ts"
+  },
+  "keywords": [
+    "rag",
+    "gemini",
+    "pinecone",
+    "vector-search",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^1.28.0",
+    "@pinecone-database/pinecone": "^4.0.0",
+    "dotenv": "^16.4.7",
+    "openai": "^4.77.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,19 @@
+
+{
+  "deck_metadata": {
+    "filename": "The original PDF filename (e.g., 'EV_Campaign_Proposal.pdf')",
+    "deck_industry": "The specific industry of the client (e.g., 'Automotive - EV', 'Fintech', 'Retail')",
+    "company_name": "The name of the company/client",
+    "executive_summary": "A concise 2-3 sentence summary of the entire proposal's main goal and strategy, ensuring ALL major creative ideas (e.g., Creative A and B) are briefly mentioned."
+  },
+  "slide_data": {
+    "slide_number": "The page number (integer) within the original PDF",
+    "slide_layout_type": "The formal section type of this slide (e.g., 'Market Analysis', 'Campaign Strategy', 'Execution Plan', 'KPIs', 'Creative Idea', 'TBWA Intro' - Note: Filter out 'TBWA Intro' during final ingestion)",
+    "slide_title": "The exact title or header text of the slide",
+    "slide_summary": "A 2-3 sentence summary of the content on this specific slide, including any critical data points (e.g., 'DAU increased 15x in Q2') or key concepts.",
+    "search_keywords": [
+      "Highly specific and relevant business terms for this slide ONLY (max 5 keywords)",
+      "Must be concrete, not abstract (e.g., 'consumer perception', 'innovative technology', 'YouTube DAU', 'CPA strategy')"
+    ]
+  }
+}

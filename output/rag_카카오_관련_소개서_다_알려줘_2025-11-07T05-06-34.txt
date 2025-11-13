@@ -1,0 +1,145 @@
+
+================================================================================
+🔍 DeckBot RAG Query
+================================================================================
+
+📝 Question: "카카오 관련 소개서 다 알려줘"
+
+
+🔢 Generating query embedding...
+
+🎯 Target Keywords for scoring: 마케팅 제안서, 전략 제안서, 콘텐츠 전략, 콘텐츠 제안, IP 소개...
+   Target Industry: 콘텐츠
+   Target Company: 카카오페이지
+
+🔎 Searching Pinecone (enriched-slides namespace)...
+   Found: 20 results, top score: 59.7%
+
+📊 Re-scoring results by keyword relevance...
+
+✅ Found 10 results (boosted by keyword matching)
+   1. 카카오페이지 (64.4% | 1 kw matches (orig: 49.4%))
+      Matched: 오가닉 콘텐츠 전략
+   2. 카카오페이지 (64.3% | 1 kw matches (orig: 49.3%))
+      Matched: 타겟별 콘텐츠 전략
+   3. 카카오페이지 (59.7% (orig: 59.7%))
+   4. 카카오페이지 (58.1% (orig: 58.1%))
+   5. 카카오페이지 (54.8% (orig: 54.8%))
+   6. 카카오페이지 (54.7% (orig: 54.7%))
+   7. 카카오페이지 (54.4% (orig: 54.4%))
+   8. 카카오페이지 (53.6% (orig: 53.6%))
+   9. 카카오페이지 (53.0% (orig: 53.0%))
+   10. Life.zip (51.7% (orig: 51.7%))
+
+💬 Generating answer...
+
+================================================================================
+📊 ANSWER:
+================================================================================
+네, 요청하신 카카오페이지의 마케팅 및 콘텐츠 전략, 운영 현황 관련 자료를 찾아봤습니다.
+
+**`[ilgram] 카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안_FINAL.pdf`** 파일이 가장 연관성이 높은 자료로 보입니다. 이 자료는 2023년 SNS 운영 현황 리뷰와 2024년 마케팅 전략 제안을 모두 포함하고 있습니다.
+
+### 주요 추천 자료
+
+가장 찾으시는 내용과 부합하는 핵심 슬라이드는 다음과 같습니다.
+
+1.  **카카오페이지 SNS 운영 전략 및 성과 보고서 (표지)**
+    *   **Slide #1:** 2023년 카카오페이지 SNS 채널의 운영 성과를 분석하고, 2024년의 구체적인 운영 전략과 방향성을 제안하는 보고서의 표지입니다. 찾으시는 **운영 현황**과 **전략 제안** 내용을 모두 담고 있음을 알 수 있습니다.
+2.  **X(Twitter) 채널의 오가닉 콘텐츠 전략 성과**
+    *   **Slide #8:** 고관여 유저를 타겟으로 한 X(Twitter) 채널의 **오가닉 콘텐츠 전략**이 어떻게 카카오페이지의 주요 IP 노출을 극대화했는지 성과를 보여주는 슬라이드입니다.
+3.  **2024년 인지도 채널(인스타그램/틱톡) 전략**
+    *   **Slide #76:** 2024년 인스타그램과 틱톡 채널에서 신규 구독자 유입과 기존 팔로워 충성도 강화를 위해 어떻게 **콘텐츠 전략을 이원화하여 운영할지 제안**하는 구체적인 실행 방안을 담고 있습니다.
+
+### 기타 관련 슬라이드
+
+위 슬라이드 외에도 해당 보고서에서 다음과 같은 유용한 정보를 확인하실 수 있습니다.
+
+*   **전체 목차 (Slide #2):** 2023년 성과 분석과 2024년 방향성 제안으로 구성된 보고서의 전체 구조를 파악할 수 있습니다.
+*   **유튜브 운영 성과 요약 (Slide #10):** 숏폼 마케팅을 통해 앱 유입 및 채널 성장을 달성한 2023년 유튜브 채널의 구체적인 성과 지표를 확인할 수 있습니다.
+*   **2024년 상반기 KPI (Slide #81):** SNS 채널별 2024년 상반기 운영 목표(조회, 구독, 유입)를 수치화된 KPI로 제시합니다.
+
+요약하면, **`카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안`** 문서를 통해 카카오페이지의 최신 SNS 마케팅 전략과 운영 현황을 상세히 파악하실 수 있습니다.
+================================================================================
+
+📄 Detailed Results:
+
+1. 카카오페이지 - 콘텐츠
+   File: [ilgram] 카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안_FINAL.pdf
+   Score: 64.4%
+   Slide: #8
+   Summary: 이 슬라이드는 고관여 유저를 타겟팅하는 X(Twitter) 채널 성과를 보고하며, 오가닉 콘텐츠 전략을 통해 카카오페이지의 주요 IP들이 다수의 실시간 트렌드 키워드에 등극함으로써 IP 노출이 극대화되었음을 입증한다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-sns-2023-2024-final.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-sns-2023-2024-final/slide-008.png
+
+2. 카카오페이지 - 콘텐츠
+   File: [ilgram] 카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안_FINAL.pdf
+   Score: 64.3%
+   Slide: #76
+   Summary: 2024년 인지 채널(인스타그램/틱톡) 전략은 비팔로워를 위한 구독 유도 콘텐츠와 팔로워 충성도 강화를 위한 정보 전달 콘텐츠를 분리하여 운영하는 이원화된 실행 방안을 제시한다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-sns-2023-2024-final.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-sns-2023-2024-final/slide-076.png
+
+3. 카카오페이지 - 콘텐츠
+   File: [ilgram] 카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안_FINAL.pdf
+   Score: 59.7%
+   Slide: #1
+   Summary: 이 슬라이드는 카카오페이지 SNS 채널들의 2023년 운영 성과를 분석하고, 2024년 앱 유입 및 인지도 강화를 위한 구체적인 운영 전략과 방향성을 제안하는 보고서의 표지이다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-sns-2023-2024-final.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-sns-2023-2024-final/slide-001.png
+
+4. 카카오페이지 - 콘텐츠
+   File: [ilgram] 카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안_FINAL.pdf
+   Score: 58.1%
+   Slide: #2
+   Summary: 본 슬라이드는 제안서의 전체 목차를 제시하며, 2023년 카카오페이지의 SNS 채널별 운영 성과 분석(Part 1)과 이를 바탕으로 한 2024년 채널별 운영 방향성 제안(Part 2)을 핵심 구조로 보여준다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-sns-2023-2024-final.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-sns-2023-2024-final/slide-002.png
+
+5. 카카오페이지 - 콘텐츠
+   File: [ilgram] 카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안_FINAL.pdf
+   Score: 54.8%
+   Slide: #83
+   Summary: 이 슬라이드는 부록(Appendix) 섹션의 시작을 알리는 질문 슬라이드로, 카카오페이지 공식 SNS를 통해 단일 IP에 주간 10만 이상의 대규모 유입을 달성할 수 있는 전략적 방안을 모색한다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-sns-2023-2024-final.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-sns-2023-2024-final/slide-083.png
+
+6. 카카오페이지 - 콘텐츠
+   File: [ilgram] 카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안_FINAL.pdf
+   Score: 54.7%
+   Slide: #3
+   Summary: 이 슬라이드는 프레젠테이션의 첫 번째 주요 섹션인 'Part 1: 2023 Review'를 소개하는 제목 슬라이드로, 카카오페이지의 전년도 SNS 운영 성과 분석을 시작함을 알린다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-sns-2023-2024-final.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-sns-2023-2024-final/slide-003.png
+
+7. 카카오페이지 - 콘텐츠
+   File: [ilgram] 카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안_FINAL.pdf
+   Score: 54.4%
+   Slide: #10
+   Summary: 이 슬라이드는 2023년 카카오페이지 유튜브 운영 성과를 요약하며, 알고리즘 최적화 숏폼 마케팅을 통해 앱 유입 및 채널 성장을 극대화했음을 보여준다. 주요 콘텐츠 유형과 함께 총 6,700만 회 이상의 조회수와 28만 명 이상의 구독자 달성 등 구체적인 성과 지표를 ...
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-sns-2023-2024-final.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-sns-2023-2024-final/slide-010.png
+
+8. 카카오페이지 - 콘텐츠
+   File: [ilgram] 카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안_FINAL.pdf
+   Score: 53.6%
+   Slide: #5
+   Summary: 2023년 카카오페이지는 4개 채널 운영을 통해 폭넓은 관여도의 유저를 성공적으로 타겟팅하여 앱 유입을 이끌었으며, 이는 신규 채널 확장 및 숏폼 마케팅과 IP 버즈량 극대화 전략의 결합을 통해 달성되었다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-sns-2023-2024-final.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-sns-2023-2024-final/slide-005.png
+
+9. 카카오페이지 - 콘텐츠
+   File: [ilgram] 카카오페이지 SNS 2023년 운영 리뷰 및 2024년 운영 방향성 제안_FINAL.pdf
+   Score: 53.0%
+   Slide: #81
+   Summary: 카카오페이지 SNS 채널의 2024년 상반기 운영 목표를 조회/도달, 구독, 유입 세 가지 핵심 지표로 나누어 채널별 월별 KPI를 수치화하여 제시한다. 특히 4월부터는 인스타그램 구독 및 오가닉 유입 목표치가 상향 조정되어 성과 극대화를 꾀하고 있다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/ilgram-sns-2023-2024-final.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/ilgram-sns-2023-2024-final/slide-081.png
+
+10. Life.zip - 소프트웨어
+   File: (Social Lab) Life.zip '25년 커뮤니케이션 전략 제안_241202.pdf
+   Score: 51.7%
+   Slide: #285
+   Summary: 이 슬라이드는 제안사의 포트폴리오 섹션의 일부로, 동원 F&B의 주요 브랜드(리챔, 덴마크)를 위한 2년간의 페이스북 및 인스타그램 채널 운영 사례를 시각적인 콘텐츠 예시와 함께 제시합니다....
+   PDF: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/pdfs/social-lab-lifezip-25-241202.pdf
+   Image: https://xsctqzbwa1mbabgs.public.blob.vercel-storage.com/images/social-lab-life.zip%20%2725%E1%84%82%E1%85%A7%E1%86%AB%20%E1%84%8F%E1%85%A5%E1%84%86%E1%85%B2%E1%84%82%E1%85%B5%E1%84%8F%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%20%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%85%E1%85%A3%E1%86%A8%20%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A1%E1%86%AB_241202/slide-285.png

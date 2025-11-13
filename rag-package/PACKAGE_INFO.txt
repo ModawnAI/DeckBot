@@ -1,0 +1,126 @@
+================================================================================
+DECKBOT RAG PACKAGE - Shareable Distribution
+================================================================================
+
+📦 Package Contents:
+   - Gemini-powered RAG query system
+   - TypeScript source code with full type safety
+   - Complete documentation and setup guides
+   - Example configuration files
+
+📁 Directory Structure:
+   rag-package/
+   ├── src/
+   │   └── rag-query.ts          # Main RAG query script
+   ├── output/                   # Query results saved here
+   ├── README.md                 # Full documentation
+   ├── QUICKSTART.md             # 5-minute setup guide
+   ├── package.json              # Dependencies (minimal)
+   ├── tsconfig.json             # TypeScript configuration
+   ├── .env.example              # Environment template
+   ├── .gitignore                # Git ignore rules
+   └── metadata-template.json    # Example metadata structure
+
+🔑 Required API Keys:
+   1. Google Gemini AI          → Query improvement & answer generation
+   2. Pinecone Vector DB        → Vector similarity search
+   3. OpenAI                    → Text embeddings (text-embedding-3-large)
+
+📊 System Requirements:
+   - Node.js 18 or higher
+   - Pinecone index with 'enriched-slides' namespace
+   - Metadata file with companies, industries, keywords
+
+🚀 Quick Start:
+   1. npm install
+   2. cp .env.example .env      (add your API keys)
+   3. Update METADATA_PATH in src/rag-query.ts
+   4. npm run rag "your question"
+
+📚 Documentation:
+   - QUICKSTART.md → Fast setup (5 minutes)
+   - README.md     → Complete guide with examples
+   - src/rag-query.ts → Fully commented source code
+
+🎯 Key Features:
+   ✓ Gemini AI query enhancement
+   ✓ Intelligent keyword matching
+   ✓ Multi-model architecture (Gemini + OpenAI)
+   ✓ Smart re-ranking algorithm
+   ✓ Persistent result files
+   ✓ Detailed logging and analysis
+
+⚙️ Configuration Options:
+   - INDEX_NAME: Your Pinecone index name
+   - TOP_K: Initial results to fetch (default: 10)
+   - FINAL_RESULTS: Final results to return (default: 4)
+   - METADATA_PATH: Location of metadata.json
+   - Keyword boost strength (line 316)
+
+📝 Example Usage:
+   npm run rag "헬스케어 마케팅 전략"
+   npm run rag "social media campaign examples"
+   npm run rag "유튜브 인스타 운영 전략"
+
+💾 Output Format:
+   Results saved to: output/rag_<question>_<timestamp>.txt
+   Includes:
+   - Original & improved query
+   - Keyword matches
+   - Relevance scores
+   - AI-generated answer
+   - Detailed result breakdown
+
+🔧 Customization:
+   - Edit METADATA_PATH constant (line 26)
+   - Adjust keyword boost multiplier (line 316)
+   - Modify TOP_K and FINAL_RESULTS (lines 24-25)
+   - Change Gemini models (lines 109, 250)
+
+📦 Dependencies (Production):
+   @google/genai              → Gemini AI SDK
+   @pinecone-database/pinecone → Vector database client
+   openai                     → OpenAI embeddings
+   dotenv                     → Environment variables
+
+📦 Dependencies (Development):
+   typescript                 → Type safety
+   tsx                       → TypeScript execution
+   @types/node               → Node.js types
+
+🎓 Technical Details:
+   - Embedding Model: text-embedding-3-large (3072 dimensions)
+   - Query Model: Gemini 2.5 Flash Preview
+   - Answer Model: Gemini 2.5 Pro
+   - Vector DB: Pinecone (serverless or pod-based)
+   - Language: TypeScript (ES2022 modules)
+
+📋 Pinecone Requirements:
+   - Namespace: enriched-slides
+   - Dimension: 3072
+   - Metadata fields:
+     * type (slide/deck)
+     * company_name
+     * industry
+     * filename
+     * slide_number
+     * slide_summary
+     * keywords (array)
+     * pdf_url (optional)
+     * image_url (optional)
+
+🔐 Security Notes:
+   - Never commit .env file to version control
+   - Keep API keys secure and private
+   - Use environment variables in production
+   - Review .gitignore before sharing
+
+📞 Troubleshooting:
+   - Check QUICKSTART.md for common issues
+   - Verify API keys are valid
+   - Ensure metadata file exists at correct path
+   - Confirm Pinecone index namespace exists
+
+================================================================================
+Ready to share! This package is self-contained and production-ready.
+================================================================================
