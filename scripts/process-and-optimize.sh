@@ -355,13 +355,7 @@ process_single_pdf() {
     # Step 3: Consolidate metadata
     consolidate_metadata
 
-    # Step 4: Ingest to Pinecone
-    log_step "Ingesting to Pinecone"
-    if npm run ingest 2>&1 | tee -a "$PROCESSING_LOG"; then
-        log_success "Pinecone ingestion complete"
-    else
-        log_error "Pinecone ingestion failed (continuing anyway)"
-    fi
+    # Note: Pinecone ingestion now happens automatically during PDF processing
 
     # Mark as successfully processed
     echo "$pdf_name" >> "$SUCCESS_LOG"

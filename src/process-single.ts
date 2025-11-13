@@ -4,6 +4,7 @@ import { config as loadEnv } from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { MetadataExtractor } from './metadata-extractor.js';
+import { PineconeIngestor } from './pinecone-ingestor.js';
 import type { ProcessingConfig } from './types.js';
 
 // Load environment variables
@@ -93,6 +94,16 @@ async function main() {
     console.log('\n💾 Saving JSON output...');
     const outputPath = await extractor.savePitchDeckData(pitchDeckData, pdfFilename);
     console.log(`✅ Saved to: ${path.relative(projectRoot, outputPath)}`);
+
+    // Ingest to Pinecone
+    console.log('\n📤 Ingesting to Pinecone...');
+    try {
+      const ingestor = new PineconeIngestor();
+      await ingestor.ingestPresentation(pitchDeckData);
+      console.log('✅ Pinecone ingestion successful');
+    } catch (error) {
+      console.error('⚠️  Pinecone ingestion failed (continuing anyway):', error);
+    }
 
     console.log('\n' + '='.repeat(80));
     console.log('🎉 Processing complete!');
